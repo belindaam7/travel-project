@@ -2,7 +2,7 @@ body {
   font-family: "poppins";
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
     url(../images/mexico-city-panoramic.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,10 +25,67 @@ button {
   padding: 18px;
   font-size: 24px;
   font-weight: 700;
-  background-color: black;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px black;
 }
 
 button a:link {
-    color: white;
+    color: rgb(110, 187, 239);
   text-decoration: none;
+}
+
+button a:visited {
+    color: rgb(110, 187, 239);
+    text-decoration: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 17px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../images/The-colourful-flag-of-Mexico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+footer p {
+    text-align: justify;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+ul {
+    font-size: 14px;
+    
+}
+li {
+    list-style: none;
+    text-align: center;
+
+}
+
+li a:visited {
+    text-decoration: none;
+    color: white;
+}
+ 
+li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    footer{
+        display: block;
+    }
+    ul{
+        display: inline-flex;
+    }
+    li {
+        padding: 20px;
+    }
 }

@@ -270,3 +270,27 @@ div.card{
         height: 100%;
     }
 }
+.section3 {
+    text-align: center;
+}
+
+.instagram-media {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.section3 .grid-3col {
+    margin: 40px;
+}
+
+@media (max-width: 900px) {
+    .instagram-media {
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    h3.section3, h2.section3 {
+        display: block;
+    }
+}
